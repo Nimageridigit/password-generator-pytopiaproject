@@ -19,8 +19,7 @@ Each generator class inherits from a base `PasswordGenerator` class. They each o
 ---
 
 ## ⚙️ Tech Stack
-- Language/Framework: `Python`, `Flask`  
-- Database: `SQLite`  
+- Language/Framework: `Python`  
 - Tools: `Git`, `GitHub`  
 
 ---
@@ -29,26 +28,20 @@ Each generator class inherits from a base `PasswordGenerator` class. They each o
 
 ```bash
 # 1. Clone the repository
-git clone git@github.com:USERNAME/REPO-NAME.git
+git clone git@github.com:Nimageridigit/password-generator-pytopiaproject.git
 
 # 2. Navigate to project folder
 cd REPO-NAME
-
+ # TODO
 # 3. Install dependencies
 pip install -r requirements.txt
-
+ # TODO
 # 4. Run the project
-python app.py
+python app.py # TODO
 ```
 
 ---
 
-## 📷 Screenshots / Demo
-(Add a screenshot or a demo GIF of the project here)  
-
-![screenshot](./screenshot.png)  
-
----
 
 ## 👤 
 - [Nimageridigit](https://github.com/Nimageridigit)  
