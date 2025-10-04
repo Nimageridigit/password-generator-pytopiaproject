@@ -1,9 +1,15 @@
 import random
 import nltk
+
 from nltk.corpus import words
 from parent_class import *
 
-nltk.download('words') # type: ignore
+
+try:
+    words.words()
+except LookupError:
+    nltk.download('words')
+
 
 class MemorablePass(PasswordGenerator):
     def __init__(self, num_words: int=6,separator: str="_", capitalization: bool=False):
@@ -22,5 +28,5 @@ class MemorablePass(PasswordGenerator):
         password = self.separator.join(selected_words) # type: ignore
         return password
 
-test = MemorablePass(num_words=5, separator='_', capitalization=True)
-print(f'Memorable password is: {test.password_generator()}')
+#test = MemorablePass(num_words=5, separator='_', capitalization=True)
+#print(f'Memorable password is: {test.password_generator()}')
