@@ -4,6 +4,7 @@ import string
 from parent_class import *
 
 class RandomPass(PasswordGenerator):
+    
     def __init__(self, length: int=8, include_number: bool= False, include_symbol: bool= False ):
 
         self.length = length
@@ -20,5 +21,5 @@ class RandomPass(PasswordGenerator):
         """
         return ''.join(random.choice(self.characters) for _ in range(self.length))
     
-#test= RandomPass()
-#print(test.password_generator())
+#test= RandomPass(18,True,True)
+#print(f"Random password is:{test.password_generator()}")
