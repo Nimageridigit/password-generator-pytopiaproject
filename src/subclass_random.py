@@ -3,7 +3,7 @@ import string
 
 from parent_class import *
 
-class Random_pass(PasswordGenerator):
+class RandomPass(PasswordGenerator):
     def __init__(self, length: int=8, include_number: bool= False, include_symbol: bool= False ):
         self.length = length
         self.include_number = include_number
@@ -15,5 +15,6 @@ class Random_pass(PasswordGenerator):
         if self.include_symbol:
             chars += string.punctuation
         return ''.join(random.choice(chars) for _ in range(self.length))
-# test= Random_pass()
-# print(test.password_generator())
+    
+#test= RandomPass()
+#print(test.password_generator())
