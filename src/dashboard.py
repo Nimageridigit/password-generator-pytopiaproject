@@ -15,3 +15,17 @@ if user_choice == "Pin Code":
     generator=PinPass(length)
     password=generator.password_generator()
     st.write(f"Your pic code is: `{password}`")
+elif user_choice == "Random Password":
+    length=st.slider("select the length of random password you want to create:",8,50)
+    include_symbol=st.checkbox("Include special characters?")
+    include_numbers=st.checkbox("Include numbers?")
+    generator=RandomPass(length,include_numbers,include_symbol)
+    password=generator.password_generator()
+    st.write(f"Your random password is: ````{password}````")
+elif user_choice == "Memorable Password":
+    num_words=st.slider("select the number of words you want to create:",1,10)
+    seperator=st.text_input("Select a separator:","_")
+    capitalization=st.checkbox("Capitalize the first letter of each word?")
+    generator=MemorablePass(num_words,seperator,capitalization)
+    password=generator.password_generator()
+    st.write(f"Your memorable password is: `{password}`")

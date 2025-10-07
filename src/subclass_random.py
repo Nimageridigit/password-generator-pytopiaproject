@@ -11,7 +11,7 @@ class RandomPass(PasswordGenerator):
         self.characters: str = string.ascii_letters
         if include_number:
             self.characters += string.digits
-        if include_number:
+        if include_symbol:
             self.characters += string.punctuation
     
     def password_generator(self) -> str:
