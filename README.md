@@ -31,13 +31,13 @@ Each generator class inherits from a base `PasswordGenerator` class. They each o
 git clone git@github.com:Nimageridigit/password-generator-pytopiaproject.git
 
 # 2. Navigate to project folder
-cd REPO-NAME
- # TODO
+cd The/location/you/cloned/repo
+
 # 3. Install dependencies
 pip install -r requirements.txt
- # TODO
+
 # 4. Run the project
-python app.py # TODO
+python src/main.py
 ```
 
 ---
