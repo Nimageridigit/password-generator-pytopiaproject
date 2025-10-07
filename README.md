@@ -15,7 +15,7 @@ The password generator uses the Python `random` module to generate passwords bas
 2. `MemorablePasswordGenerator` creates a password made up of a set number of randomly chosen words from the NLTK English language corpus. It can optionally separate the words with a separator and use capitalized words.
 3. `PinCodeGenerator` creates a numeric password of a specified length.
 
-Each generator class inherits from a base `PasswordGenerator` class. They each override the base class's `generate()` method in order to provide their own unique password generation functionality.
+Each generator class inherits from a base `PasswordGenerator` class. They each override the base class's `password_generator()` method in order to provide their own unique password generation functionality.
 ---
 
 ## ⚙️ Tech Stack
